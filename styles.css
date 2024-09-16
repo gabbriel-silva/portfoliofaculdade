@@ -1,0 +1,203 @@
+/* Estilos gerais para o corpo da página */
+body {
+  font-family: 'Arial', sans-serif; /* Fonte padrão da página */
+  background-color: #2e004d; /* Cor de fundo geral da página */
+  color: #fff; /* Cor do texto */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #3a006e; /* Cor de fundo do cabeçalho */
+  padding: 20px; /* Espaçamento interno do cabeçalho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para o cabeçalho */
+  animation: fadeInDown 1s ease-out; /* Animação de entrada do cabeçalho */
+}
+
+/* Estilos para o título no cabeçalho */
+header h1 {
+  text-align: center; /* Centraliza o texto */
+  color: #ffdd00; /* Cor do texto do título */
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  animation: colorChange 3s infinite alternate; /* Animação de troca de cor no título */
+}
+
+/* Estilos para a barra de navegação */
+nav ul {
+  list-style: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove preenchimento padrão */
+  display: flex; /* Exibe os itens da lista em linha */
+  justify-content: center; /* Centraliza os itens da lista horizontalmente */
+  animation: fadeInUp 1.5s ease-out; /* Animação de entrada da barra de navegação */
+}
+
+nav ul li {
+  margin: 0 15px; /* Margem horizontal entre os itens da lista */
+}
+
+/* Estilos para os links na barra de navegação */
+nav ul li a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #ffdd00; /* Cor do texto dos links */
+  padding: 10px; /* Espaçamento interno dos links */
+  border-radius: 5px; /* Bordas arredondadas nos links */
+  font-size: 1.1rem; /* Tamanho da fonte dos links */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para efeitos de hover */
+  position: relative; /* Define a posição relativa para efeitos adicionais */
+  animation: slideIn 0.8s ease-in-out; /* Animação de entrada dos links */
+}
+
+/* Efeitos de hover para os links da barra de navegação */
+nav ul li a:hover {
+  background-color: #ffdd00; /* Cor de fundo ao passar o mouse */
+  color: #2e004d; /* Cor do texto ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho do link ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(255, 221, 0, 0.5); /* Sombra ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  padding: 20px; /* Espaçamento interno do conteúdo principal */
+  margin: 40px auto; /* Margem vertical e centraliza o conteúdo */
+  max-width: 800px; /* Largura máxima do conteúdo principal */
+  background-color: #4a007b; /* Cor de fundo do conteúdo principal */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra ao redor do conteúdo */
+  animation: fadeIn 2s ease-out; /* Animação de entrada do conteúdo principal */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #3a006e; /* Cor de fundo do rodapé */
+  padding: 10px; /* Espaçamento interno do rodapé */
+  text-align: center; /* Centraliza o texto no rodapé */
+  color: #ffdd00; /* Cor do texto do rodapé */
+  position: relative; /* Define a posição relativa para o rodapé */
+  bottom: 0; /* Posiciona o rodapé na parte inferior */
+  width: 100%; /* Largura total do rodapé */
+  animation: fadeInUp 1.5s ease-out; /* Animação de entrada do rodapé */
+}
+
+/* Estilos para os campos do formulário */
+form div {
+  margin-bottom: 15px; /* Margem inferior entre os campos do formulário */
+  animation: fadeIn 1s ease-in-out; /* Animação de entrada dos campos do formulário */
+}
+
+/* Estilos para os rótulos dos campos do formulário */
+form label {
+  display: block; /* Exibe os rótulos em bloco */
+  margin-bottom: 5px; /* Margem inferior dos rótulos */
+  color: #ffdd00; /* Cor do texto dos rótulos */
+}
+
+/* Estilos para os campos de entrada e textarea no formulário */
+form input, form textarea {
+  width: 100%; /* Largura total dos campos */
+  padding: 10px; /* Espaçamento interno dos campos */
+  border: 2px solid #ffdd00; /* Borda dos campos */
+  border-radius: 5px; /* Bordas arredondadas nos campos */
+  background-color: #4a007b; /* Cor de fundo dos campos */
+  color: #fff; /* Cor do texto dos campos */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Transição suave para efeitos de foco */
+}
+
+/* Efeitos de foco para os campos de entrada e textarea */
+form input:focus, form textarea:focus {
+  border-color: #ffdd00; /* Cor da borda ao focar */
+  transform: scale(1.02); /* Aumenta o tamanho dos campos ao focar */
+}
+
+/* Estilos para o botão de envio do formulário */
+form button {
+  background-color: #ffdd00; /* Cor de fundo do botão */
+  color: #2e004d; /* Cor do texto do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Bordas arredondadas no botão */
+  cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+/* Efeitos de hover para o botão de envio do formulário */
+form button:hover {
+  background-color: #ffc300; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(255, 195, 0, 0.5); /* Sombra ao passar o mouse */
+}
+
+/* Estilos para os ícones na navegação e rodapé */
+nav ul li a i, footer i {
+  margin-right: 8px; /* Margem direita dos ícones na navegação */
+}
+
+footer i {
+  margin-right: 5px; /* Margem direita dos ícones no rodapé */
+}
+
+/* Estilos para os links no rodapé */
+footer a {
+  color: #ffdd00; /* Cor do texto dos links no rodapé */
+  text-decoration: none; /* Remove sublinhado dos links */
+  margin: 0 10px; /* Margem horizontal dos links */
+  transition: color 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+/* Efeitos de hover para os links no rodapé */
+footer a:hover {
+  color: #ffc300; /* Cor do texto ao passar o mouse */
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Opacidade inicial */
+  }
+  to {
+      opacity: 1; /* Opacidade final */
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0; /* Opacidade inicial */
+      transform: translateY(50px); /* Move o elemento para baixo */
+  }
+  to {
+      opacity: 1; /* Opacidade final */
+      transform: translateY(0); /* Move o elemento para sua posição original */
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0; /* Opacidade inicial */
+      transform: translateY(-50px); /* Move o elemento para cima */
+  }
+  to {
+      opacity: 1; /* Opacidade final */
+      transform: translateY(0); /* Move o elemento para sua posição original */
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0; /* Opacidade inicial */
+      transform: translateX(-50px); /* Move o elemento para a esquerda */
+  }
+  to {
+      opacity: 1; /* Opacidade final */
+      transform: translateX(0); /* Move o elemento para sua posição original */
+  }
+}
+
+@keyframes colorChange {
+  0% {
+      color: #ffdd00; /* Cor inicial */
+  }
+  100% {
+      color: #ffc300; /* Cor final */
+  }
+}
